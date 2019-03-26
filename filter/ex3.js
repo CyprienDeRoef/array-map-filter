@@ -23,8 +23,7 @@ Sortie attendue:
 
  */
 
-function keepStarks(names) {
-}
+let keepStarks = names => names.filter(a => (a.split(' ')[1] === 'Stark') ? true : false)
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

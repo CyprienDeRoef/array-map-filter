@@ -50,7 +50,6 @@ Sortie attendue:
 
 */
 
-function getStudentsPerCurriculum(campuses, curriculumName) {
-}
+let getStudentsPerCurriculum = (campuses, curriculumName) => campuses.filter(a => a.curriculums.name === curriculumName).map(a => a[Object] = {'a.city' : a.curriculum.numStudents})
 
 module.exports = getStudentsPerCurriculum;

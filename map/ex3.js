@@ -54,14 +54,18 @@ En sortie:
       name: 'White Boy Rick',
       rating: 60,
       label: 'fresh'
-    }
+    } 
   ]
 
  */
 
+// let getMoviesFreshness = movies => movies.map(a => (a.rating > 75) ? Object.defineProperty(a, "label", {value ='certified fresh'}) : (a.rating > 60) && (a.rating <= 75) ? Object.defineProperty(a, "label", {value = 'fresh'}) : Object.defineProperty(a, "label", {value = 'rotten'}))
 function getMoviesFreshness(movies) {
+  for (let i = 0; i < movies.length; i++) {
+    movies.map(movies => (movies.rating<60) ? movies['label'] = "rotten" :(movies.rating>75) ? movies['label'] = "certified fresh" : movies['label'] = "fresh")
+  }
+  return movies;
 }
-
 
 
 // Ne pas modifier l'export
