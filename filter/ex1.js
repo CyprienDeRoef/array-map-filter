@@ -11,7 +11,7 @@ Sortie attendue:
 
  */
 
-let getPositiveNumbers = numbers => numbers.filter(a => a>= 0);azertyuiop
+let getPositiveNumbers = numbers => numbers.filter(a => a>= 0);
 
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
